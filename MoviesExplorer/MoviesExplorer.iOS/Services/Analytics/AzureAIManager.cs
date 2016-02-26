@@ -2,6 +2,9 @@
 
 namespace MoviesExploerer.iOS
 {
+	/// <summary>
+	/// Manage Azure App Insights start/update
+	/// </summary>
 	public static class AzureAiManager
 	{
 		public static void Setup(string appKey)

@@ -12,7 +12,9 @@ using MoviesExplorer.Core;
 
 namespace MoviesExploerer.iOS
 {
-
+	/// <summary>
+	/// Source https://gist.github.com/jamesmontemagno/6323125
+	/// </summary>
 	public class MvxUIRefreshControl : UIRefreshControl
 	{
 

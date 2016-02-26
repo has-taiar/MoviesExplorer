@@ -32,7 +32,7 @@ namespace MoviesExploerer.iOS
 
 			var source = new FavoritesTableTableViewSource(ViewModel, TableView, "FavoriteTableViewCell");
 			TableView.Source = source;
-			TableView.RowHeight = 100; // (nfloat) Config.FavoritesTableRowHeight; // TODO: calc this value dynamically based on screen bounds
+			TableView.RowHeight = (nfloat) Config.FavoritesTableRowHeight; // TODO: calc this value dynamically based on screen bounds
 			TableView.SeparatorColor = UIColor.Orange;
 
 			var set = this.CreateBindingSet<FavoritesView, FavoritesViewModel>();
@@ -44,6 +44,19 @@ namespace MoviesExploerer.iOS
 			set.Apply();
 
 			TableView.ReloadData ();
+		}
+
+		public override void ViewDidAppear (bool animated)
+		{
+			base.ViewDidAppear (animated);
+			ViewModel.AppTracker.TrackScreen (this.GetType().Name);
+		}
+
+		public override void DidReceiveMemoryWarning ()
+		{
+			base.DidReceiveMemoryWarning ();
+
+			ViewModel.Logger.LogWarn ($"{this.GetType()} Page Received Memory Warning");
 		}
 
 		private void SetupNavBar ()

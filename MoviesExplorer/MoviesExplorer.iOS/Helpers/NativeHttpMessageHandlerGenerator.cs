@@ -9,6 +9,10 @@ namespace MoviesExploerer.iOS
 	{
 		#region  implementation
 
+		/// <summary>
+		/// Generate a native HttpMessageHandler
+		/// </summary>
+		/// <returns>The native handler.</returns>
 		public HttpMessageHandler GetNativeHandler ()
 		{
 			return new NativeMessageHandler ();

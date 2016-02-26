@@ -22,7 +22,7 @@ namespace MoviesExplorer.Core
 		public const float SmallCollectionViewCellHeight = 130;
 		public const float LargeCollectionViewCellWidth = 120;
 		public const float LargeCollectionViewCellHeight = 165;
-		public const float FavoritesTableRowHeight  = 175;
+		public const float FavoritesTableRowHeight  = 120;
 
 		public const string ApiResourceAddressForNowPlaying = "now_playing";
 		public const string ApiResourceAddressForPopularMovies = "popular";

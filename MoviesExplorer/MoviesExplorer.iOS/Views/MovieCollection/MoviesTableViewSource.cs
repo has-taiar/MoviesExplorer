@@ -17,7 +17,7 @@ namespace MoviesExploerer.iOS
 
 		public override nfloat GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
 		{
-			return 140;// MoviesTableViewCell.GetCellHeight();
+			return 140; // TODO: calc this dynamically based on screens bound
 		}
 
 		protected override UITableViewCell GetOrCreateCellFor(UITableView tableView, NSIndexPath indexPath, object item)

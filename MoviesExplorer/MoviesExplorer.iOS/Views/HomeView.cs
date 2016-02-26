@@ -53,6 +53,19 @@ namespace MoviesExploerer.iOS
 			TableView.ReloadData ();
 		}
 			
+		public override void ViewDidAppear (bool animated)
+		{
+			base.ViewDidAppear (animated);
+			ViewModel.AppTracker.TrackScreen (this.GetType().Name);
+		}
+
+		public override void DidReceiveMemoryWarning ()
+		{
+			base.DidReceiveMemoryWarning ();
+
+			ViewModel.Logger.LogWarn ($"{this.GetType()} Page Received Memory Warning");
+		}
+
 		private new HomeViewModel ViewModel
 		{
 			get { return base.ViewModel as HomeViewModel; }

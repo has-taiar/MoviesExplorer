@@ -7,6 +7,9 @@ using SQLite.Net.Platform.XamarinIOS;
 
 namespace MoviesExploerer.iOS
 {
+	/// <summary>
+	/// Generic class that helps our Repositories do all db-related tasks.
+	/// </summary>
 	public class Database : SQLiteConnection, IDatabase
 	{
 		public Database (string dbfile) : base(new SQLitePlatformIOS(), dbfile)

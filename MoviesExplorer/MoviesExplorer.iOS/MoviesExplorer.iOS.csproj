@@ -213,7 +213,6 @@
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
-    <None Include="DeviceInfoReadme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -232,7 +231,6 @@
     </Compile>
     <Compile Include="Views\MovieCollection\MoviesCollectionViewFlowLayout.cs" />
     <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
-    <Compile Include="Views\MovieCollection\HeaderView.cs" />
     <Compile Include="Views\MovieDetailView.cs" />
     <Compile Include="Views\MovieDetailView.designer.cs">
       <DependentUpon>MovieDetailView.cs</DependentUpon>
@@ -251,7 +249,6 @@
     <Compile Include="Data\Database.cs" />
     <Compile Include="Views\FavoritesView.cs" />
     <Compile Include="Bootstrap\MessengerPluginBootstrap.cs" />
-    <Compile Include="Helpers\ViewCellDimensionCalculator.cs" />
     <Compile Include="Views\MovieCollection\FavoriteTableViewCell.cs" />
     <Compile Include="Views\MovieCollection\FavoriteTableViewCell.designer.cs">
       <DependentUpon>FavoriteTableViewCell.cs</DependentUpon>
@@ -291,7 +288,6 @@
     <BundleResource Include="Resources\favorite.png" />
     <BundleResource Include="Resources\favorite%402x.png" />
     <BundleResource Include="Resources\favorite%403x.png" />
-    <BundleResource Include="Resources\movie.jpg" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="pdreview">
