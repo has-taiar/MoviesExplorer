@@ -56,7 +56,7 @@ namespace MoviesExplorer.Core.UnitTests
 			Messenger.Publish(new MovieMessage(this, new Movie{Id=5, Title="Pursuit of Happyness"}, true));
 
 			var movie = viewModel.Movies.FirstOrDefault ();
-			Assert.IsNotNull (movie, "Movie should be add to the list when it's saved to favorite");
+			Assert.IsNotNull (movie, "Movie should be added to the list when it's saved to favorite");
 			Assert.AreEqual (5, movie.Id);
 		}
 	}

@@ -30,7 +30,7 @@ namespace MoviesExplorer.Core
 			Movie = movie;
 			VotesCount = $"(of {movie?.VotesCount} votes)";
 			ReleaseDate = $"Release Date: {Movie?.ReleaseDate}";
-			AverageRating = (decimal) movie.VotesAverage; // todo: fix type difference
+			AverageRating = (decimal) movie.VotesAverage; // todo: fix type difference (MvvmCross is not passing decimal
 			SimilarMovies = await _movieApiService.GetSimilarMovies (movie.Id);
 			IsSavedToLocalDb = await _localDataService.IsInFavorites (movie.Id);
 		}
@@ -161,7 +161,7 @@ namespace MoviesExplorer.Core
 			}
 		}
 
-		public string _saveToFavoritesButtonText = "Add To Favorites";
+		public string _saveToFavoritesButtonText = Config.SaveToFavoriteButtonText;
 		public string SaveToFavoritesButtonText
 		{
 			get { return _saveToFavoritesButtonText; }
@@ -173,7 +173,7 @@ namespace MoviesExplorer.Core
 
 		void UpdateSaveToFavoritesButtonText ()
 		{
-			SaveToFavoritesButtonText = IsSavedToLocalDb ? "Remove from Favorites" : "Add to Favorites";
+			SaveToFavoritesButtonText = IsSavedToLocalDb ? Config.RemoveFromFavoriteButtonText : Config.SaveToFavoriteButtonText;
 		}
 	}
 }

@@ -13,6 +13,8 @@ namespace MoviesExplorer.Core
 			public const string ErrorMessageHeading = "Oops!";
 		}
 
+		public const string SaveToFavoriteButtonText = "Save to Favorites";
+		public const string RemoveFromFavoriteButtonText = "Remove from Favorites";
 		public const string CloseButtonIconName = "close.png";
 		public const string FavoritesScreenTitle = "Favorites";
 		public const string AppTitle = "Movie Explorer";
