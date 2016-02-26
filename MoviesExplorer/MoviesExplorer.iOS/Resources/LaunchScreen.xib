@@ -19,7 +19,7 @@
                 </label>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies Explorer" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="kId-c2-rCX" misplaced="YES">
                     <rect key="frame" x="20" y="140" width="441" height="43"/>
-                    <fontDescription key="fontDescription" name="StackyardPERSONALUSE" family="Stackyard PERSONAL USE" pointSize="40"/>
+                    <fontDescription key="fontDescription" name="StackyardPERSONALUSE" family="Stackyard PERSONAL USE" pointSize="32"/>
                     <color key="textColor" colorSpace="calibratedRGB" red="1" green="0.49803921568627452" blue="0" alpha="1"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -45,5 +45,6 @@
         <image name="Stars/empty.png" width="200" height="190"/>
         <image name="Fonts/AveFedan_PERSONAL_USE.ttf" width="0" height="0"/>
         <image name="Fonts/Stackyard_PERSONAL_USE.ttf" width="0" height="0"/>
+        <image name="favorite.png" width="22" height="22"/>
     </resources>
 </document>
