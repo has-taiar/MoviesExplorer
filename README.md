@@ -109,4 +109,4 @@ This project and all my contributions here are made publically available under [
 
 ### Comments and Questions
 
-All comments and/or questions are welcome. Head of to my personal blog [HasAlTaiar.com.au](https://HasAlTaiar.com.au) for more info, or tag me in your tweet on @hasaltaiar 
+All comments and/or questions are welcome. Head of to my personal blog [HasAlTaiar.com.au](http://www.HasAlTaiar.com.au) for more info, or tag me in your tweet on @hasaltaiar 
