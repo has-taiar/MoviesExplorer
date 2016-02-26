@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="175" id="cxk-wN-pdQ" customClass="FavoriteTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="174.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars: The Force Awakens " lineBreakMode="wordWrap" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKi-Ds-BDa">
+                        <rect key="frame" x="152" y="8" width="160" height="61"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EF1-4L-4Uz">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="174.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="EF1-4L-4Uz" secondAttribute="height" multiplier="24:29" id="SWB-ou-cLL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/12/2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUf-Nw-42L">
+                        <rect key="frame" x="152" y="151" width="160" height="15"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                        <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZ1-Aa-J0Z">
+                        <rect key="frame" x="152" y="134" width="160" height="15"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="LUf-Nw-42L" firstAttribute="top" secondItem="yZ1-Aa-J0Z" secondAttribute="bottom" constant="2" id="1hE-eZ-quN"/>
+                    <constraint firstItem="EF1-4L-4Uz" firstAttribute="top" secondItem="YTl-1W-gDM" secondAttribute="topMargin" id="9HK-DX-Azv"/>
+                    <constraint firstItem="LUf-Nw-42L" firstAttribute="width" secondItem="GKi-Ds-BDa" secondAttribute="width" id="9tE-Wv-ZwV"/>
+                    <constraint firstItem="yZ1-Aa-J0Z" firstAttribute="width" secondItem="GKi-Ds-BDa" secondAttribute="width" id="ADs-Y8-5Jm"/>
+                    <constraint firstItem="GKi-Ds-BDa" firstAttribute="height" secondItem="YTl-1W-gDM" secondAttribute="height" multiplier="0.35" id="CXl-UZ-MrU"/>
+                    <constraint firstItem="EF1-4L-4Uz" firstAttribute="height" secondItem="YTl-1W-gDM" secondAttribute="height" id="P6n-s2-lhI"/>
+                    <constraint firstItem="EF1-4L-4Uz" firstAttribute="centerY" secondItem="YTl-1W-gDM" secondAttribute="centerY" id="S5s-1m-GpH"/>
+                    <constraint firstItem="GKi-Ds-BDa" firstAttribute="leading" secondItem="EF1-4L-4Uz" secondAttribute="trailing" constant="8" id="Tdr-p0-0v5"/>
+                    <constraint firstItem="EF1-4L-4Uz" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" constant="-8" id="Vu7-Hu-SDo"/>
+                    <constraint firstItem="yZ1-Aa-J0Z" firstAttribute="leading" secondItem="EF1-4L-4Uz" secondAttribute="trailing" constant="8" id="Xzo-LD-3N3"/>
+                    <constraint firstItem="LUf-Nw-42L" firstAttribute="leading" secondItem="EF1-4L-4Uz" secondAttribute="trailing" constant="8" id="cpO-Od-9QY"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LUf-Nw-42L" secondAttribute="trailing" id="gSL-ow-PIu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="LUf-Nw-42L" secondAttribute="bottom" constant="0.5" id="iZa-8d-iUn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="yZ1-Aa-J0Z" secondAttribute="trailing" id="mB0-U4-unq"/>
+                    <constraint firstAttribute="topMargin" secondItem="GKi-Ds-BDa" secondAttribute="top" id="nop-ol-1WO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GKi-Ds-BDa" secondAttribute="trailing" id="pzl-MH-Lxs"/>
+                    <constraint firstItem="EF1-4L-4Uz" firstAttribute="leading" secondItem="YTl-1W-gDM" secondAttribute="leadingMargin" id="tbh-C9-MYI"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="9HK-DX-Azv"/>
+                        <exclude reference="tbh-C9-MYI"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="MainMovieImage" destination="EF1-4L-4Uz" id="Yc5-if-Jyd"/>
+                <outlet property="MovieTitleLabel" destination="GKi-Ds-BDa" id="GYG-FT-7BR"/>
+                <outlet property="ReleaseDateValueLabel" destination="LUf-Nw-42L" id="7sA-7c-Aux"/>
+            </connections>
+            <point key="canvasLocation" x="580" y="451.5"/>
+        </tableViewCell>
+    </objects>
+</document>
