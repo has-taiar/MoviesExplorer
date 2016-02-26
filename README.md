@@ -61,6 +61,15 @@ The application is built to be a Universal app meaning that it can run on iPhone
 The application makes use of the native Http message handlers to speed up the processing of Http messages. This has a proven effect of making processing http requests drastically faster.
 
 
+**Use of AutoMapper**
+
+The application uses AutoMapper to map Dto objects from the api to our application models. This makes it extremely easy to maintain the code that maps these entities. 
+
+
+**Implementation of IDatabase**
+
+IDatabase is an abstraction of a local database. This is used to hide the specific implementation from our PCL code. The application makes use of SQLite.Net-PCL for handling the platform-specific impelementation and provides a generic Database class that is injected into all repositories to make it very easy to do any CURD operations on the database in an ORM fashion. 
+
 
 
 ## Limitations
@@ -75,19 +84,29 @@ Some aspects of the screens need a little more work to make them adapt properly 
 Although the application has a good number of tests, the test coverage can be improved by adding more unit, integration and UI tests. 
 
 
-## List of Used Libraries
+## List of Used OpenSource Libraries
 
 * [MvvmCross](http://www.mvvmcross.com/).
-* [MvvmCross](http://www.mvvmcross.com/).
-* [MvvmCross](http://www.mvvmcross.com/).
-* [MvvmCross](http://www.mvvmcross.com/).
-* [MvvmCross](http://www.mvvmcross.com/).
-* [MvvmCross](http://www.mvvmcross.com/).
+* [MvvmCross Messenger](https://www.nuget.org/packages/MvvmCross.Plugin.Messenger/).
+* [MvvmCross DownloadCache](https://www.nuget.org/packages/MvvmCross.ITSparta.Plugin.DownloadCache/).
+* [MvvmCross UserInteraction](https://www.nuget.org/packages/Chance.MvvmCross.Plugins.UserInteraction/).
+* [SQLite.Net-PCL](https://www.nuget.org/packages/SQLite.Net-PCL/).
+* [DeviceInfo](https://www.nuget.org/packages/Xam.Plugin.DeviceInfo/).
+* [AutoMapper](https://www.nuget.org/packages/AutoMapper/).
+* [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/).
+* [NUnit](https://www.nuget.org/packages/NUnit/).
+* [Moq](https://www.nuget.org/packages/Moq/).
+* [ModernHttpClient](https://www.nuget.org/packages/modernhttpclient/).
+* [PDReview](https://components.xamarin.com/view/pdreview/).
+* [Azure App Insights Bindings](https://github.com/Microsoft/ApplicationInsights-Xamarin).
 
 
 
 ### Licensing
 
+This project and all my contributions here are made publically available under [MIT License](https://opensource.org/licenses/MIT). This does not extend to projects and libraries that I have used and I respect their owners IP and Licenses. 
 
 
 ### Comments and Questions
+
+All comments and/or questions are welcome. Head of to my personal blog [HasAlTaiar.com.au](https://HasAlTaiar.com.au) for more info, or tag me in your tweet on @hasaltaiar 

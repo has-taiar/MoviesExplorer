@@ -53,6 +53,12 @@ namespace MoviesExploerer.iOS
 			TableView.ReloadData ();
 		}
 			
+		public async override void MotionEnded (UIEventSubtype motion, UIEvent evt)
+		{
+			base.MotionEnded (motion, evt);
+			await ViewModel.LoadData ();
+		}
+
 		public override void ViewDidAppear (bool animated)
 		{
 			base.ViewDidAppear (animated);
