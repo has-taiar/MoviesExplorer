@@ -1,11 +1,13 @@
 // WARNING
 //
-// This file has been generated automatically by Xamarin Studio to store outlets and
-// actions made in the UI designer. If it is removed, they will be lost.
-// Manual changes to this file may not be handled correctly.
+// This file has been generated automatically by Xamarin Studio from the outlets and
+// actions declared in your storyboard file.
+// Manual changes to this file will not be maintained.
 //
 using Foundation;
+using System;
 using System.CodeDom.Compiler;
+using UIKit;
 
 namespace MoviesExploerer.iOS
 {
@@ -50,69 +52,57 @@ namespace MoviesExploerer.iOS
 
 		[Outlet]
 		UIKit.UILabel VotesCountLabel { get; set; }
-		
+
 		void ReleaseDesignerOutlets ()
 		{
-			if (BlurBackgroundEffectView != null) {
-				BlurBackgroundEffectView.Dispose ();
-				BlurBackgroundEffectView = null;
-			}
-
 			if (BackgroundImage != null) {
 				BackgroundImage.Dispose ();
 				BackgroundImage = null;
 			}
-
+			if (BlurBackgroundEffectView != null) {
+				BlurBackgroundEffectView.Dispose ();
+				BlurBackgroundEffectView = null;
+			}
 			if (MainMovieImage != null) {
 				MainMovieImage.Dispose ();
 				MainMovieImage = null;
 			}
-
 			if (MainScrollView != null) {
 				MainScrollView.Dispose ();
 				MainScrollView = null;
 			}
-
 			if (MovieDescriptionTextView != null) {
 				MovieDescriptionTextView.Dispose ();
 				MovieDescriptionTextView = null;
 			}
-
 			if (MovieRatingViewHolder != null) {
 				MovieRatingViewHolder.Dispose ();
 				MovieRatingViewHolder = null;
 			}
-
 			if (MovieTitleLabel != null) {
 				MovieTitleLabel.Dispose ();
 				MovieTitleLabel = null;
 			}
-
 			if (PlayVideoButton != null) {
 				PlayVideoButton.Dispose ();
 				PlayVideoButton = null;
 			}
-
 			if (ReleaseDateLabel != null) {
 				ReleaseDateLabel.Dispose ();
 				ReleaseDateLabel = null;
 			}
-
 			if (SaveToFavoritesButton != null) {
 				SaveToFavoritesButton.Dispose ();
 				SaveToFavoritesButton = null;
 			}
-
 			if (SimilarMoviesCollectionView != null) {
 				SimilarMoviesCollectionView.Dispose ();
 				SimilarMoviesCollectionView = null;
 			}
-
 			if (SimilarMoviesHeaderLabel != null) {
 				SimilarMoviesHeaderLabel.Dispose ();
 				SimilarMoviesHeaderLabel = null;
 			}
-
 			if (VotesCountLabel != null) {
 				VotesCountLabel.Dispose ();
 				VotesCountLabel = null;
