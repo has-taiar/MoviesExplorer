@@ -56,7 +56,9 @@ namespace MoviesExploerer.iOS
 		public async override void MotionEnded (UIEventSubtype motion, UIEvent evt)
 		{
 			base.MotionEnded (motion, evt);
-			await ViewModel.LoadData ();
+
+			if (ViewModel != null)
+				await ViewModel.LoadData ();
 		}
 
 		public override void ViewDidAppear (bool animated)
